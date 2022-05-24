@@ -15,9 +15,9 @@ const showStatisticDirHelper = (pathToDir, file) => {
   fs.stat(currentPath, (err, stats) => {
     if (stats.isFile()) {
       stdout.write(showStatisticFile(currentPath, stats));
-    } else {
+    } /*else {
       showStatisticDir(path.join(pathToDir, file));
-    }
+    } */
   });
 };
 
