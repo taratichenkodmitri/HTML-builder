@@ -1,5 +1,7 @@
 const path = require('path');
-const copy = require('./modules/copy');
+
+const moduleCopy = path.join(__dirname, 'modules', 'copy');
+const copy = require(moduleCopy);
 
 const targetDirectory = path.join(__dirname, 'files');
 const copyDirectory = path.join(__dirname, 'files-copy');

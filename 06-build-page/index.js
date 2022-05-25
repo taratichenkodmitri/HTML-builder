@@ -1,7 +1,11 @@
 const path = require('path');
 const fs = require('fs');
-const copy = require('../04-copy-directory/modules/copy');
-const mergeStyles = require('../05-merge-styles/modules/mergeStyles');
+
+const moduleCopy = path.join('..','04-copy-directory', 'modules', 'copy');
+const copy = require(moduleCopy);
+
+const moduleMergeStyles = path.join('..', '05-merge-styles', 'modules', 'mergeStyles');
+const mergeStyles = require(moduleMergeStyles);
 
 const projectDist = path.join(__dirname, 'project-dist');
 const assetsDir = path.join(__dirname, 'assets');
